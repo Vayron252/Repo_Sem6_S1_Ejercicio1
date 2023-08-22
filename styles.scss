@@ -1,0 +1,45 @@
+$color-primario: rgb(52, 52, 116);
+
+body {
+    background-color: rgb(160, 189, 212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    height: 50px;
+
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-primario;
+        text-decoration: underline;
+    }
+
+    &__navegacion {
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    &__navegacion__ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        gap: 3rem;
+        padding: 0 2rem;
+        align-items: center;
+
+        &__li a {
+            text-decoration: none;
+            color: $color-primario;
+            font-weight: bold;
+        }
+    }
+}
